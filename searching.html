@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page_nav">
+        <p>Searching Algorithm Visualizer</p>
+        <select name="" id="select_search">
+            <option value="linear_search">Linear Search</option>
+            <option value="binary_search">Binary Search</option>
+        </select>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="sorting.html">Sorting</a>
+        </div>
+    </div>
+    <h1>Visualize Linear Search</h1>
+    <div class="inputs">
+        <p>Enter an integer array</p>
+        <input type="text" class="arrInput">
+        <br>
+        <p>Enter element to search</p>
+        <input type="text" class="emtInput">
+        <br>
+        <button id="randomize">Generate Random Inputs</button>
+        <br>
+        <button id="search">Search</button>
+    </div>
+    <div class="searching_container">
+        <div class="boxes"></div>
+        <div class="search_terminal"></div>
+    </div>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

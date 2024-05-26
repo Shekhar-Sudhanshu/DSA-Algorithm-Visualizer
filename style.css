@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    height: 80px;
+    padding: 10px;
+}
+nav .logo{
+    font-size: x-large;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: large;
+    padding: 22px;
+    column-gap: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: blue;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    column-gap: 40px;
+}
+.main .container{
+    border: solid 2px black;
+    width: 20%;
+    text-align: center;
+    height: 35vh;
+}
+.main .container img{
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+.main .container:hover{
+    box-shadow: 0 0 20px black;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+}
+footer h3{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
+
+/*Pages*/
+.page_nav{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+.page_nav select{
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 7vh;
+}
+
+.page_nav .menu{
+    display: flex;
+    margin-top: 18px;
+    column-gap: 20px;
+    text-decoration: none;
+}
+
+.page_nav .menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.page_nav .menu a:hover{
+    color: blue;
+}
+  
+  
+/*Sorting Page CSS*/
+
+.inputs{
+    text-align: center;
+}
+.inputs input{
+    margin-bottom: 10px;
+}
+.inputs .arrInput{
+    font-size: large;
+    border-radius: 20px;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+}
+.inputs button{
+    padding: 10px;
+    font-size: medium;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: whitesmoke;
+}
+.sorting_container{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    column-gap: 20px;
+}
+.sorting_container .bars{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 55vh;
+}
+.bar{
+    width: 50px;
+    border: solid 2px black;
+    margin: 0 2px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.terminal{
+    overflow: auto;
+    font-size: large;
+    text-align: center;
+    height: 50vh;
+    padding: 20px;
+    border: solid 2px black;
+    width: 20%;
+}
+
+/*Searching Page Css*/
+.inputs .emtInput{
+    font-size: large;
+    border-radius: 20px;
+    padding: 10px;
+    width: 20%;
+    text-align: center  ;
+}
+
+.bounce {
+    animation: bounce 1s ease-in-out;
+}
+
+/*About Page*/
+.about{
+    padding: 50px;
+    text-align: center;
+}
+
+/**/
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.searching_container{
+    margin: 15px;
+    column-gap: 20px;
+}
+
+.searching_container .boxes{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.searching_container .search_terminal{
+    text-align: center;
+    font-size: large;
+}
+
+/*Different Screen Sizes*/
+@media only screen and (max-width: 1150px){
+    .main .container{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 800px){
+    body{
+        overflow: auto;
+    }
+    .main .container{
+        width: 35%;
+    }
+    .sorting_container{
+        display: block;
+    }
+    .terminal{
+        width: 90%;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main{
+        column-gap: 5px;
+        margin-top: 17vh;
+    }
+    .main .container{
+        width: 45%;
+        height: 30vh;
+    }
+    nav{
+        display: block;
+        height: 120px;
+        padding: 1px;
+        text-align: center;
+    }
+    nav ul{
+        padding: 0px;
+        justify-content: center;
+        margin-right: 8px;
+    }
+    footer h3{
+        font-size: medium;
+    }
+    footer p{
+        font-size: small;
+    }
+    .page_nav{
+        display: block;
+        text-align: center;
+        padding: 1px;
+    }
+    .page_nav p{
+        font-size: larger;
+    }
+    .page_nav select{
+        margin-right: 0px;
+    }
+    .page_nav .menu{
+        justify-content: center;
+        font-size: medium;
+    }
+    .sorting_container{
+        display: block;
+    }
+    .terminal{
+        margin: 10px;
+        width: 83%;
+    }
+    .bar{
+        width: 7px;
+        font-size: small;
+    }
+    .inputs .arrInput{
+        font-size: medium;
+        width: 80%;
+    }
+    .inputs .emtInput{
+        font-size: small;
+    }
+    .inputs button{
+        font-size: small;
+        margin: 3px;
+    }
+}

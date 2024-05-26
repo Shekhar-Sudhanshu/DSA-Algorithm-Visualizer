@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page_nav">
+        <p>Sorting Algorithm Visualizer</p>
+        <select name="" id="select_sort">
+            <option value="bubble_sort">Bubble Sort</option>
+            <option value="insertion_sort">Insertion Sort</option>
+            <option value="selection_sort">Selection Sort</option>
+        </select>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="searching.html">Searching</a>
+        </div>
+    </div>
+    <h1>Visualize Bubble Sort</h1>
+    <div class="inputs">
+        <p>Enter an array</p>
+        <input type="text" class="arrInput">
+        <br>
+        <button id="randomize">Generate Random Array</button>
+        <br>
+        <button id="sort">Sort</button>
+    </div>
+    <div class="sorting_container">
+        <div class="bars"></div>
+        <div id="terminal"></div>
+    </div>
+
+    <script src="js/sort.js"></script>
+</body>
+</html>
